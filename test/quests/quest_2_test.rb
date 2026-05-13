@@ -6,6 +6,8 @@ class Quest2IntelSeedTest < QuestTestCase
   setup do
     Rails.application.load_seed
 
+    Agent.where(codename: nil).destroy_all
+
     QuestProgress.find_or_create_by!(quest_number: 1) do |quest|
       quest.status = "accepted"
       quest.accepted_at = Time.current

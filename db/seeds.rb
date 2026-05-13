@@ -47,15 +47,15 @@ if required_classes.all? && required_tables.all? { |table_name| quest_table_exis
   ]
 
   missions_data = [
-    { title: "Harbor Shield", status: "assigned", agent_codename: "Atlas" },
+    { title: "Harbor Shield", status: "pending", agent_codename: "Atlas" },
     { title: "Midnight Relay", status: "in_progress", agent_codename: "Atlas" },
     { title: "Silent Echo", status: "completed", agent_codename: "Atlas" },
     { title: "Ghost Signal", status: "completed", agent_codename: "Echo" },
-    { title: "Iron Veil", status: "assigned", agent_codename: "Echo" },
+    { title: "Iron Veil", status: "pending", agent_codename: "Echo" },
     { title: "Sapphire Run", status: "completed", agent_codename: "Echo" },
     { title: "Solar Tide", status: "in_progress", agent_codename: "Echo" },
     { title: "Frozen Cipher", status: "completed", agent_codename: "Nova" },
-    { title: "Ember Trace", status: "assigned", agent_codename: "Viper" },
+    { title: "Ember Trace", status: "pending", agent_codename: "Viper" },
     { title: "Glass Horizon", status: "completed", agent_codename: "Viper" }
   ]
 
