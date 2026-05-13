@@ -13,7 +13,7 @@ class Quest2StudentService
     # @return [String]
     def agents_with_missions
       Agent.order(:codename).map do |agent|
-        missions = agent.missions.order(:title).pluck(:title).join(', ')
+        missions = agent.missions.order(:title).pluck(:title).join(", ")
         "#{agent.codename}: #{missions}"
       end.join("\n")
     end
@@ -30,7 +30,7 @@ class Quest2StudentService
     # @return [String]
     def agents_with_skills
       Agent.order(:codename).map do |agent|
-        skills = agent.skills.order(:name).pluck(:name).join(', ')
+        skills = agent.skills.order(:name).pluck(:name).join(", ")
         "#{agent.codename}: #{skills}"
       end.join("\n")
     end
